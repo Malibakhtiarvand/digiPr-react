@@ -3,6 +3,7 @@ import SuperMarket from "../../assets/superMarket.png";
 import moreWork from "../../assets/moreWorks.png";
 import checkRerender from "../../helpers/checkRerender";
 
+
 const style = {
   position: "absolute",
   top: "50%",
