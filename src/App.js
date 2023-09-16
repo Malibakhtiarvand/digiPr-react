@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { CacheProvider, ThemeProvider } from "@emotion/react";
+import { Toolbar } from "@mui/material";
+import "./App.css";
+import Footer from "./component/footer/footer";
+import Header from "./component/header/header";
+import Main from "./component/main/Main";
+import checkRerender from "./helpers/checkRerender";
+import { Cache } from "./helpers/mui/cache";
+import { Theme } from "./helpers/mui/theme";
 
 function App() {
+  checkRerender("App")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CacheProvider value={Cache}>
+      <ThemeProvider theme={Theme}>
+        <Header />
+        <Toolbar /> 
+        <Main />
+        <Footer />
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
 

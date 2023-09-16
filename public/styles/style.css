@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "yekan";
+  src: url("./fonts/BYekan+.ttf");
+}
+
+* {
+  font-family: "yekan";
+}
+
+.swiper-slide {
+  height: 300px !important;
+}
+
+.swiper-slide > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mySwiper1 > img {
+  height: 220px;
+}
+
+.more_works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .more_works {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adverestement{
+  height: 70px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .adverestement {
+    width: 150%;
+    animation: adverestementAnima 20s linear infinite;
+  }
+}
+
+@keyframes adverestementAnima {
+  from{
+    transform: translateX(-70%);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+.footerItems {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .footerItems{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .footerItems{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .footerItems{
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerItemDiv {
+  padding-right: 10px;
+  border-style: outset;
+}
