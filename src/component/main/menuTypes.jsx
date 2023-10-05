@@ -13,7 +13,7 @@ export default function MenuTypes() {
   const close = () => setShowDialog(false);
   return (
     <div
-      className="d-flex justify-content-between align-items-center mt-3 flex-wrap"
+      className="d-flex justify-content-center align-items-center mt-3 flex-wrap"
       style={{ gap: "40px" }}
     >
       <div className="text-center">

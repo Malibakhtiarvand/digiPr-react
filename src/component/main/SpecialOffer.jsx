@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import pr from "../../assets/pr.webp";
 import checkRerender from "../../helpers/checkRerender";
 import box from "../../assets/box.webp";
+import { NavLink } from "react-router-dom";
 
 export default function SpecialOffer() {
   checkRerender("SpecialOffer");
@@ -21,12 +22,14 @@ export default function SpecialOffer() {
       setSlidesPerView(3);
     } else if (window.innerWidth > 670) {
       setSlidesPerView(2);
-    }else{
-      setSlidesPerView(1)
+    } else {
+      setSlidesPerView(1);
     }
   }
 
-  useEffect(() => {checkWidth()}, []);
+  useEffect(() => {
+    checkWidth();
+  }, []);
 
   window.onresize = checkWidth;
   return (
@@ -38,49 +41,97 @@ export default function SpecialOffer() {
         modules={[Navigation]}
         className="mySwiper1"
         style={{
-          backgroundColor: "red",
+          backgroundColor: "#ffe4e8",
           marginTop: "20px",
           height: "250px",
           textAlign: "center",
         }}
       >
         <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={box} alt="pr" />
-          <p>فروش موبایل</p>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={box}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
         </SwiperSlide>
         <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img style={{ height: "220px", width: "200px" }} src={pr} alt="pr" />
-          <p>فروش موبایل</p>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <NavLink to={"/prs/" + Math.floor(Math.random() * 20)}>
+            <img
+              style={{ height: "220px", width: "200px" }}
+              src={pr}
+              alt="pr"
+            />
+            <p>فروش موبایل</p>
+          </NavLink>
         </SwiperSlide>
       </Swiper>
     </>

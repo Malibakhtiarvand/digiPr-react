@@ -11,7 +11,7 @@ export default function Main() {
 
   return (
     <>
-      <Container sx={{ mt: "150px" }}>
+      <Container>
         <Slider />
         <MenuTypes />
         <SpecialOffer />

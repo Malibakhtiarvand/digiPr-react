@@ -3,6 +3,7 @@ import checkRerender from "../../helpers/checkRerender";
 
 export default function Categories() {
   checkRerender("categories")
+  
   return (
     <div className="mt-4">
       <h2>دسته بندی ها</h2>
